@@ -35,10 +35,10 @@
         $stmt ->closeCursor();      
     }
 // valide les articles commandés pour introduire dans la db
-    function commande_panier($id,$ref,$nom,$prix,$quantite){
-        $query_item = "INSERT INTO commande_item (id_client_item,nom,prix,quantite,ref) VALUES (:id_client_item,:nom,:prix,:quantite,:ref)";
+    function commande_panier($id,$ref,$prix,$quantite,$produit_nom_achat){
+        $query_item = "INSERT INTO commande_item (id_client_item,ref,prix,quantite,nom_produit) VALUES (:id_client_item,:ref,:prix,:quantite,:nom)";
         $item = get_db()->prepare($query_item);
-        $item->execute(array(':id_client_item'=>$id,':nom'=>$nom,':prix'=>$prix,':quantite'=>$quantite,':ref'=>$ref));
+        $item->execute(array(':id_client_item'=>$id,':prix'=>$prix,':quantite'=>$quantite,':ref'=>$ref,':nom'=>$produit_nom_achat));
         $item->closeCursor();
     }
     function remove($ref){

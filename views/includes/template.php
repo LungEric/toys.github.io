@@ -39,9 +39,14 @@
                 </ul>
             </div>
             <?php elseif($_SESSION['user']=="admin"):?>
-                <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="<?=ROOT_PATH?>admin">administrateur</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="<?=ROOT_PATH?>statistique">statistique</a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -53,6 +58,11 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="<?=ROOT_PATH?>shopping_cart">Shopping cart</a></li>
+                </ul>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="<?=ROOT_PATH?>commande">commandes</a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarCollapse">

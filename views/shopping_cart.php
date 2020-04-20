@@ -38,7 +38,6 @@
 <div class="jumbotron jumbotron-fluid">
     <h1 >Shopping cart</h1>
     <table cellpadding="10" cellspacing="1">
-    
     <tbody>
         <tr>
             <th style="text-align:left;">Nom</th>
@@ -81,15 +80,6 @@
             <input type="submit" name="vider" value="vider" class="btnAddAction" />
         </td> 
     </form>
-</div>
-<!-- Voir la commande avant enter dans la DB -->
-<div class="jumbotron jumbotron-fluid" method="post" >
-        <h1 class="display-4">Commande</h1>
-        <?php echo '<pre>';print_r($_SESSION['panier']);echo '<pre>'; ?>
-        <?php echo '<pre>';print_r($_SESSION['panier_nom_produit']);echo '<pre>'; ?>
-        <?php echo '<pre>';print_r($_SESSION['total']);echo '<pre>'; ?>
-        <?php echo '<pre>';print_r($_SESSION['user']);echo '<pre>'; ?>
-        <?php echo '<pre>';print_r($_SESSION['id']);echo '<pre>'; ?>
 </div>
 <?php
     $title = "shopping_cart";

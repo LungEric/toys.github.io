@@ -38,12 +38,11 @@
             $panier=$_SESSION['panier'];   
             commander($id,$total_db);
             foreach($panier as $count=>$item){
-                $nom_item=$item['nom'];
+                $produit_nom_achat=$item['nom'];
                 $prix_item=$item['prix'];
                 $quantite_item=$item['quantite'];
                 $ref_item=$item['ref'];
-                
-                commande_panier($id,$nom_item,$prix_item,$quantite_item,$ref_item);
+                commande_panier($id,$ref_item,$prix_item,$quantite_item,$produit_nom_achat);
             }
             // vide
             unset($_SESSION['panier']);
