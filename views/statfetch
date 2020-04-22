@@ -1,0 +1,708 @@
+Array
+(
+    [0] => Array
+        (
+            [id_client] => 100
+            [0] => 100
+            [client_email] => LUNGSZEHOERIC@OUTLOOK.COM
+            [1] => LUNGSZEHOERIC@OUTLOOK.COM
+            [client_password] => $2y$10$CtX3F.pX6w9MSUkPODLxJOMxMw5cz/.pjt5NLzrnWodumilzj48BO
+            [2] => $2y$10$CtX3F.pX6w9MSUkPODLxJOMxMw5cz/.pjt5NLzrnWodumilzj48BO
+            [client_login] => eric2
+            [3] => eric2
+        )
+
+    [1] => Array
+        (
+            [id_client] => 102
+            [0] => 102
+            [client_email] => marc@outlook.com
+            [1] => marc@outlook.com
+            [client_password] => $2y$10$An2kJP5w138JcezMooQHmOwOkR0dkoZFUj1M5z0aOwxOzGy2iuAme
+            [2] => $2y$10$An2kJP5w138JcezMooQHmOwOkR0dkoZFUj1M5z0aOwxOzGy2iuAme
+            [client_login] => marc
+            [3] => marc
+        )
+
+    [2] => Array
+        (
+            [id_client] => 103
+            [0] => 103
+            [client_email] => client@outlook.com
+            [1] => client@outlook.com
+            [client_password] => $2y$10$0DYeYy2npDES5Cg7yOMOq.pqQvQb34M/vrJehZFuVNAsWSlSTnG.q
+            [2] => $2y$10$0DYeYy2npDES5Cg7yOMOq.pqQvQb34M/vrJehZFuVNAsWSlSTnG.q
+            [client_login] => client
+            [3] => client
+        )
+
+)
+    
+Array
+(
+    [0] => Array
+        (
+            [id_commande] => 34
+            [0] => 34
+            [id_c] => 100
+            [1] => 100
+            [total] => 5184.3
+            [2] => 5184.3
+            [date_commande] => 2020-04-20 15:12:05
+            [3] => 2020-04-20 15:12:05
+        )
+
+    [1] => Array
+        (
+            [id_commande] => 35
+            [0] => 35
+            [id_c] => 100
+            [1] => 100
+            [total] => 9431.25
+            [2] => 9431.25
+            [date_commande] => 2020-04-20 15:12:40
+            [3] => 2020-04-20 15:12:40
+        )
+
+    [2] => Array
+        (
+            [id_commande] => 36
+            [0] => 36
+            [id_c] => 100
+            [1] => 100
+            [total] => 1715.89
+            [2] => 1715.89
+            [date_commande] => 2020-04-20 15:42:27
+            [3] => 2020-04-20 15:42:27
+        )
+
+    [3] => Array
+        (
+            [id_commande] => 37
+            [0] => 37
+            [id_c] => 100
+            [1] => 100
+            [total] => 2009.85
+            [2] => 2009.85
+            [date_commande] => 2020-04-20 15:42:48
+            [3] => 2020-04-20 15:42:48
+        )
+
+    [4] => Array
+        (
+            [id_commande] => 38
+            [0] => 38
+            [id_c] => 102
+            [1] => 102
+            [total] => 786.25
+            [2] => 786.25
+            [date_commande] => 2020-04-21 00:55:53
+            [3] => 2020-04-21 00:55:53
+        )
+
+    [5] => Array
+        (
+            [id_commande] => 39
+            [0] => 39
+            [id_c] => 102
+            [1] => 102
+            [total] => 1157.7
+            [2] => 1157.7
+            [date_commande] => 2020-04-21 00:56:05
+            [3] => 2020-04-21 00:56:05
+        )
+
+    [6] => Array
+        (
+            [id_commande] => 40
+            [0] => 40
+            [id_c] => 102
+            [1] => 102
+            [total] => 1061.86
+            [2] => 1061.86
+            [date_commande] => 2020-04-21 01:32:10
+            [3] => 2020-04-21 01:32:10
+        )
+
+    [7] => Array
+        (
+            [id_commande] => 41
+            [0] => 41
+            [id_c] => 100
+            [1] => 100
+            [total] => 899.9
+            [2] => 899.9
+            [date_commande] => 2020-04-21 01:58:11
+            [3] => 2020-04-21 01:58:11
+        )
+
+    [8] => Array
+        (
+            [id_commande] => 42
+            [0] => 42
+            [id_c] => 103
+            [1] => 103
+            [total] => 1218.65
+            [2] => 1218.65
+            [date_commande] => 2020-04-21 16:09:31
+            [3] => 2020-04-21 16:09:31
+        )
+
+    [9] => Array
+        (
+            [id_commande] => 43
+            [0] => 43
+            [id_c] => 103
+            [1] => 103
+            [total] => 11060.2
+            [2] => 11060.2
+            [date_commande] => 2020-04-21 16:09:48
+            [3] => 2020-04-21 16:09:48
+        )
+
+    [10] => Array
+        (
+            [id_commande] => 44
+            [0] => 44
+            [id_c] => 103
+            [1] => 103
+            [total] => 1083.69
+            [2] => 1083.69
+            [date_commande] => 2020-04-21 16:10:03
+            [3] => 2020-04-21 16:10:03
+        )
+
+    [11] => Array
+        (
+            [id_commande] => 45
+            [0] => 45
+            [id_c] => 103
+            [1] => 103
+            [total] => 8764.1
+            [2] => 8764.1
+            [date_commande] => 2020-04-21 16:12:11
+            [3] => 2020-04-21 16:12:11
+        )
+
+    [12] => Array
+        (
+            [id_commande] => 46
+            [0] => 46
+            [id_c] => 102
+            [1] => 102
+            [total] => 1550.79
+            [2] => 1550.79
+            [date_commande] => 2020-04-22 19:55:38
+            [3] => 2020-04-22 19:55:38
+        )
+
+)
+    
+Array
+(
+    [0] => Array
+        (
+            [id_commande_item] => 29
+            [0] => 29
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 66
+            [3] => 66
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-20 15:12:05
+            [6] => 2020-04-20 15:12:05
+        )
+
+    [1] => Array
+        (
+            [id_commande_item] => 30
+            [0] => 30
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 99
+            [3] => 99
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-20 15:12:40
+            [6] => 2020-04-20 15:12:40
+        )
+
+    [2] => Array
+        (
+            [id_commande_item] => 31
+            [0] => 31
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 56
+            [3] => 56
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-20 15:12:40
+            [6] => 2020-04-20 15:12:40
+        )
+
+    [3] => Array
+        (
+            [id_commande_item] => 32
+            [0] => 32
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 155.99
+            [2] => 155.99
+            [quantite] => 11
+            [3] => 11
+            [ref] => 31
+            [4] => 31
+            [nom_produit] => gundamMA
+            [5] => gundamMA
+            [date_achat] => 2020-04-20 15:42:27
+            [6] => 2020-04-20 15:42:27
+        )
+
+    [4] => Array
+        (
+            [id_commande_item] => 33
+            [0] => 33
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 155.99
+            [2] => 155.99
+            [quantite] => 10
+            [3] => 10
+            [ref] => 32
+            [4] => 32
+            [nom_produit] => gundamMA
+            [5] => gundamMA
+            [date_achat] => 2020-04-20 15:42:48
+            [6] => 2020-04-20 15:42:48
+        )
+
+    [5] => Array
+        (
+            [id_commande_item] => 34
+            [0] => 34
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 89.99
+            [2] => 89.99
+            [quantite] => 5
+            [3] => 5
+            [ref] => 5
+            [4] => 5
+            [nom_produit] => Gundamlimited
+            [5] => Gundamlimited
+            [date_achat] => 2020-04-20 15:42:48
+            [6] => 2020-04-20 15:42:48
+        )
+
+    [6] => Array
+        (
+            [id_commande_item] => 35
+            [0] => 35
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 8
+            [3] => 8
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-21 00:55:53
+            [6] => 2020-04-21 00:55:53
+        )
+
+    [7] => Array
+        (
+            [id_commande_item] => 36
+            [0] => 36
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 7
+            [3] => 7
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-21 00:55:53
+            [6] => 2020-04-21 00:55:53
+        )
+
+    [8] => Array
+        (
+            [id_commande_item] => 37
+            [0] => 37
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 75.55
+            [2] => 75.55
+            [quantite] => 5
+            [3] => 5
+            [ref] => 6
+            [4] => 6
+            [nom_produit] => GundamOmega
+            [5] => GundamOmega
+            [date_achat] => 2020-04-21 00:56:05
+            [6] => 2020-04-21 00:56:05
+        )
+
+    [9] => Array
+        (
+            [id_commande_item] => 38
+            [0] => 38
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 155.99
+            [2] => 155.99
+            [quantite] => 5
+            [3] => 5
+            [ref] => 32
+            [4] => 32
+            [nom_produit] => gundamMA
+            [5] => gundamMA
+            [date_achat] => 2020-04-21 00:56:05
+            [6] => 2020-04-21 00:56:05
+        )
+
+    [10] => Array
+        (
+            [id_commande_item] => 39
+            [0] => 39
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 89.99
+            [2] => 89.99
+            [quantite] => 8
+            [3] => 8
+            [ref] => 5
+            [4] => 5
+            [nom_produit] => Gundamlimited
+            [5] => Gundamlimited
+            [date_achat] => 2020-04-21 01:32:10
+            [6] => 2020-04-21 01:32:10
+        )
+
+    [11] => Array
+        (
+            [id_commande_item] => 40
+            [0] => 40
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 56.99
+            [2] => 56.99
+            [quantite] => 6
+            [3] => 6
+            [ref] => 7
+            [4] => 7
+            [nom_produit] => GundamAzel
+            [5] => GundamAzel
+            [date_achat] => 2020-04-21 01:32:10
+            [6] => 2020-04-21 01:32:10
+        )
+
+    [12] => Array
+        (
+            [id_commande_item] => 41
+            [0] => 41
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 75.55
+            [2] => 75.55
+            [quantite] => 8
+            [3] => 8
+            [ref] => 6
+            [4] => 6
+            [nom_produit] => GundamOmega
+            [5] => GundamOmega
+            [date_achat] => 2020-04-21 01:58:11
+            [6] => 2020-04-21 01:58:11
+        )
+
+    [13] => Array
+        (
+            [id_commande_item] => 42
+            [0] => 42
+            [id_client_item] => 100
+            [1] => 100
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 10
+            [3] => 10
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-21 01:58:11
+            [6] => 2020-04-21 01:58:11
+        )
+
+    [14] => Array
+        (
+            [id_commande_item] => 43
+            [0] => 43
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 12
+            [3] => 12
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-21 16:09:31
+            [6] => 2020-04-21 16:09:31
+        )
+
+    [15] => Array
+        (
+            [id_commande_item] => 44
+            [0] => 44
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 11
+            [3] => 11
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-21 16:09:31
+            [6] => 2020-04-21 16:09:31
+        )
+
+    [16] => Array
+        (
+            [id_commande_item] => 45
+            [0] => 45
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 89.99
+            [2] => 89.99
+            [quantite] => 25
+            [3] => 25
+            [ref] => 3
+            [4] => 3
+            [nom_produit] => Gundam222
+            [5] => Gundam222
+            [date_achat] => 2020-04-21 16:09:48
+            [6] => 2020-04-21 16:09:48
+        )
+
+    [17] => Array
+        (
+            [id_commande_item] => 46
+            [0] => 46
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 75.55
+            [2] => 75.55
+            [quantite] => 65
+            [3] => 65
+            [ref] => 4
+            [4] => 4
+            [nom_produit] => GundamZelot
+            [5] => GundamZelot
+            [date_achat] => 2020-04-21 16:09:48
+            [6] => 2020-04-21 16:09:48
+        )
+
+    [18] => Array
+        (
+            [id_commande_item] => 47
+            [0] => 47
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 155.99
+            [2] => 155.99
+            [quantite] => 25
+            [3] => 25
+            [ref] => 32
+            [4] => 32
+            [nom_produit] => gundamMA
+            [5] => gundamMA
+            [date_achat] => 2020-04-21 16:09:48
+            [6] => 2020-04-21 16:09:48
+        )
+
+    [19] => Array
+        (
+            [id_commande_item] => 48
+            [0] => 48
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 155.99
+            [2] => 155.99
+            [quantite] => 6
+            [3] => 6
+            [ref] => 31
+            [4] => 31
+            [nom_produit] => gundamMA
+            [5] => gundamMA
+            [date_achat] => 2020-04-21 16:10:03
+            [6] => 2020-04-21 16:10:03
+        )
+
+    [20] => Array
+        (
+            [id_commande_item] => 49
+            [0] => 49
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 5
+            [3] => 5
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-21 16:10:03
+            [6] => 2020-04-21 16:10:03
+        )
+
+    [21] => Array
+        (
+            [id_commande_item] => 50
+            [0] => 50
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 87.55
+            [2] => 87.55
+            [quantite] => 7
+            [3] => 7
+            [ref] => 8
+            [4] => 8
+            [nom_produit] => Gundam100scale
+            [5] => Gundam100scale
+            [date_achat] => 2020-04-21 16:12:11
+            [6] => 2020-04-21 16:12:11
+        )
+
+    [22] => Array
+        (
+            [id_commande_item] => 51
+            [0] => 51
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 6
+            [3] => 6
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-21 16:12:11
+            [6] => 2020-04-21 16:12:11
+        )
+
+    [23] => Array
+        (
+            [id_commande_item] => 52
+            [0] => 52
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 75.55
+            [2] => 75.55
+            [quantite] => 9
+            [3] => 9
+            [ref] => 6
+            [4] => 6
+            [nom_produit] => GundamOmega
+            [5] => GundamOmega
+            [date_achat] => 2020-04-21 16:12:11
+            [6] => 2020-04-21 16:12:11
+        )
+
+    [24] => Array
+        (
+            [id_commande_item] => 53
+            [0] => 53
+            [id_client_item] => 103
+            [1] => 103
+            [prix] => 1000
+            [2] => 1000
+            [quantite] => 7
+            [3] => 7
+            [ref] => 28
+            [4] => 28
+            [nom_produit] => marc
+            [5] => marc
+            [date_achat] => 2020-04-21 16:12:11
+            [6] => 2020-04-21 16:12:11
+        )
+
+    [25] => Array
+        (
+            [id_commande_item] => 54
+            [0] => 54
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 29.55
+            [2] => 29.55
+            [quantite] => 10
+            [3] => 10
+            [ref] => 1
+            [4] => 1
+            [nom_produit] => Gundam9
+            [5] => Gundam9
+            [date_achat] => 2020-04-22 19:55:38
+            [6] => 2020-04-22 19:55:38
+        )
+
+    [26] => Array
+        (
+            [id_commande_item] => 55
+            [0] => 55
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 78.55
+            [2] => 78.55
+            [quantite] => 8
+            [3] => 8
+            [ref] => 9
+            [4] => 9
+            [nom_produit] => Gundam066scale
+            [5] => Gundam066scale
+            [date_achat] => 2020-04-22 19:55:39
+            [6] => 2020-04-22 19:55:39
+        )
+
+    [27] => Array
+        (
+            [id_commande_item] => 56
+            [0] => 56
+            [id_client_item] => 102
+            [1] => 102
+            [prix] => 56.99
+            [2] => 56.99
+            [quantite] => 11
+            [3] => 11
+            [ref] => 7
+            [4] => 7
+            [nom_produit] => GundamAzel
+            [5] => GundamAzel
+            [date_achat] => 2020-04-22 19:55:39
+            [6] => 2020-04-22 19:55:39
+        )
+
+)
+    

@@ -82,8 +82,14 @@
                 <h5 class="card-title">Hello world</h5>
                 <p class="card-text">Content</p>
             </div> -->
-        <!-- javascript to run ChartJS with SQL data (JS to generate chart must come AFTER canvas HTML) -->
-        <script src='views/js/chartjs/mychart.js'></script>
+            <!-- <?php   
+                    foreach( $clients as $k=>$client){
+                        foreach($facture as $k=>$commande){
+                            echo  "client:".$client['client_login']."total:".$commande['total'];
+                        }
+                    }
+            ?> -->
+
         </div>
         </main>
         <footer class="footer">
