@@ -22,10 +22,10 @@
                     <th scope="col"> Date: </th>
                 </tr>
                 <tbody>
-                    <?php foreach($list_commande_user as $k=>$commande):?>
+                    <?php foreach($list_commande_user as $k_list=>$command):?>
                         <tr>
-                            <td scope="row"><?=$commande['total']?>€</td>
-                            <td scope="row"> <?=$commande['date_commande']?></td>       
+                            <td scope="row"><?=$command['total']?>€</td>
+                            <td scope="row"> <?=$command['date_commande']?></td>       
                         </tr> 
                     <?php endforeach?>
                 </tbody>
@@ -47,7 +47,7 @@
                 </tr>
             </thead>
             <tbody>
-                <?php foreach($item_commander as $k=>$list_item):?>
+                <?php foreach($item_commander as $k_item=>$list_item):?>
                     <tr>
                         <td scope="row"><?=$list_item['nom_produit']?>€</td>
                         <td scope="row"> <?=$list_item['ref']?></td>       

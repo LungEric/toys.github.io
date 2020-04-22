@@ -83,7 +83,7 @@
                 <p class="card-text">Content</p>
             </div> -->
         <!-- javascript to run ChartJS with SQL data (JS to generate chart must come AFTER canvas HTML) -->
-        <script src="bar.js"></script>
+        <script src='views/js/chartjs/mychart.js'></script>
         </div>
         </main>
         <footer class="footer">
