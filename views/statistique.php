@@ -1,39 +1,65 @@
 <?php
     ob_start();
+
 ?>
 
-<div class="jumbotron jumbotron-fluid" method="post" >
-        <h1 class="display-4">Mes commandes passées</h1>
-        <hr class="my-4">
-        <?php foreach($list as $article_shop):?>
-            <form method="post">
-                <div class="card text-center " >
-                    <div class="card-header" name="produit" value="<?=$article_shop['produit_name']?>">
-                        <?=$article_shop['produit_name']?>
-                    </div>
-                    <div name="image" value="<?php echo ROOT_PATH.'images/'.$article_shop['produit_image']?>"> 
-                        <img src="<?php echo ROOT_PATH.'images/'.$article_shop['produit_image']?>" alt="myPic" width='200' />
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title" name="prix" value="<?=$article_shop['produit_price']?>" ><?=$article_shop['produit_price'].'€'?></h5>
-                        <p class="card-text"><?=$article_shop['produit_description']?></p>
-                    </div>
-                    <div class="cart-action">
-                    <div >
-                        <input class="input_display" name="quantite" type="number" value="<?=$value['quantite'];?>" min="1" max="
-                        <?php if($current_max_input_value == 0){ echo $max_input_number; }else{ echo $current_max_input_value; };?>">
-                    </div>
-                        <input type="hidden" name="ref_id" value="<?=$article_shop['id_produit']?>"/>
-                        <input type="submit" name="ajouter" value="ajouter" class="btnAddAction" />
-                    </div>
-                </div>
-            </form>
-        <?php endforeach?>
+<div class="jumbotron">
+
+    <h1 class="display-4">Statistique</h1>
+
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Les commandes clients</h5>
+            <p class="card-text">Content</p>
         </div>
+    </div>
+
+    <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">Les articles</h5>
+        <p class="card-text">Content</p>
+    </div>
+
 </div>
 
+
+<!-- this DIV will display the chart canvas -->
+<div class="chart-container">
+  <canvas id="bar-chartcanvas"></canvas>
+  <!-- Lien du cdn pour chartjs-->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <!-- Script TEST -->
+  <script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+    var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+        datasets: [{
+            label: 'My First dataset',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+    });
+  </script>
+</div>
+
+
+
+
+
 <?php
-    $title = "shopping_cart";
+
+    $title = "statistique";
     $content = ob_get_clean();
-    require 'includes/template.php';
+    require 'includes/template_chartjs.php';
+
 ?>

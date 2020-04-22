@@ -5,30 +5,69 @@
 <div class="card" style="width: 18rem;">
   <div class="card-body">
     <h5 class="card-title">Utilisateur</h5>
-    <p class="card-text">User:<?= $_SESSION['user']?></p>
-    <p>ID=<?= $_SESSION['id'] ?></p>
+    <p class="card-text">User:<?= $_SESSION['user']?></p> 
     <p></p>
   </div>
 </div>
-<div class="jumbotron jumbotron-fluid" method="post">
-        <h1 class="display-4">Mes commandes:</h1>
-        <hr class="my-4">
-        <table>
-            <tr>
-                <th style="text-align:left;"> Total: </th>
-                <th style="text-align:center;" > Date: </th>
-            </tr>
+
+<div class="jumbotron">
+    <h1 class="display-4">Historique des commandes</h1>
+    <!-- card pour commandes -->
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Mes commandes : </h5>
+            <table class="table table-striped">
+                <tr>
+                    <th scope="col"> Total: </th>
+                    <th scope="col"> Date: </th>
+                </tr>
+                <tbody>
+                    <?php foreach($list_commande_user as $k=>$commande):?>
+                        <tr>
+                            <td scope="row"><?=$commande['total']?>€</td>
+                            <td scope="row"> <?=$commande['date_commande']?></td>       
+                        </tr> 
+                    <?php endforeach?>
+                </tbody>
+            </table>        
+        </div>
+    </div>
+  <!-- card pour articles commandées-->
+    <div class="card">
+        <div class="card-body">
+        <h5 class="card-title">Les articles : </h5>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col"> Produit:</th>
+                    <th scope="col" > Référence: </th>
+                    <th scope="col" > Prix: </th>
+                    <th scope="col" > Quantité: </th>
+                    <th scope="col" > Date de commande:  </th>
+                </tr>
+            </thead>
             <tbody>
-                <?php foreach($list_commande_user as $k=>$commande):?>
+                <?php foreach($item_commander as $k=>$list_item):?>
                     <tr>
-                        <td style="text-align:left;"><?=$commande['total']?>€</td>
-                        <td style="text-align:center;"> <?=$commande['date_commande']?></td>       
+                        <td scope="row"><?=$list_item['nom_produit']?>€</td>
+                        <td scope="row"> <?=$list_item['ref']?></td>       
+                        <td scope="row"> <?=$list_item['prix']?></td>   
+                        <td scope="row"> <?=$list_item['quantite']?></td>   
+                        <td scope="row"> <?=$list_item['date_achat']?></td>   
                     </tr> 
                 <?php endforeach?>
             </tbody>
-        </table>
-        
+        </table>    
+    </div>
 </div>
+<!-- 
+    prix
+    quantite
+    ref
+    nom_produit
+    date_achat
+
+ -->
 
 <?php
     $title = "shopping_cart";
