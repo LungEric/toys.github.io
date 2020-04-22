@@ -1,5 +1,6 @@
 # projet_web_final
 
-2 compte crée : 
-->compte client => login = eric2 ; mot de passe = eric2
-->compte administrateur => login = admin ; mot de passe = admin
+2 compte crée :
+  A ) compte client => login = eric2 ; mot de passe = eric2
+  C ) compte client => login = marc ; mot de passe = marc
+  C) compte administrateur => login = admin ; mot de passe = admin
