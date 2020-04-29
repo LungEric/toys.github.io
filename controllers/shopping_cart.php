@@ -15,16 +15,18 @@
             $_SESSION['panier'][$count] = $item_tableau;
 
         }
-        // retire un produit
-        if(isset($_POST['retirer'])){
+
+        // retirer un produit
+        if(isset($_POST['remove_ref'])){
             // ref du produit a retirer
-            $ref =$_POST['ref_retirer'];
+            $ref =$_POST['remove_ref'];
             foreach($_SESSION['panier'] as $key=>$val){
                 if($ref==$_SESSION['panier'][$key]['ref']){
                     unset($_SESSION['panier'][$key]);
                 }
             }  
         }
+
         // vide le panier 
         if(isset($_POST['vider'])){
             unset($_SESSION['panier']);
@@ -46,9 +48,6 @@
             }
             // vide
             unset($_SESSION['panier']);
-            // recrée un panier
-            // $_SESSION['panier']= array(); 
-            
         } 
   }else{
         // creation pannier si pas 

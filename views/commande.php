@@ -49,9 +49,9 @@
                 <tbody>
                     <?php foreach($item_commander as $k_item=>$list_item):?>
                         <tr>
-                            <td scope="row"><?=$list_item['nom_produit']?>€</td>
+                            <td scope="row"><?=$list_item['nom_produit']?></td>
                             <td scope="row"> <?=$list_item['ref']?></td>       
-                            <td scope="row"> <?=$list_item['prix']?></td>   
+                            <td scope="row"> <?=$list_item['prix']?> €</td>   
                             <td scope="row"> <?=$list_item['quantite']?></td>   
                             <td scope="row"> <?=$list_item['date_achat']?></td>   
                         </tr> 

@@ -7,7 +7,6 @@
         $sql = "SELECT * FROM produit";
         $all_articles = get_db()->prepare($sql);
         $all_articles -> execute();
-        
         $results = $all_articles ;
         return $results ;
         $result ->closeCursor();

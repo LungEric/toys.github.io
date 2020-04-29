@@ -20,8 +20,7 @@
                     </div>
                     <div class="cart-action">
                     <div >
-                        <input class="input_display" name="quantite" type="number" value="<?=$value['quantite'];?>" min="1" max="
-                        <?php if($current_max_input_value == 0){ echo $max_input_number; }else{ echo $current_max_input_value; };?>">
+                        <input class="input_display" name="quantite" type="number" value="<?=$value['quantite'];?>" min="1" max="">
                     </div>
                         <input type="hidden" name="ref_id" value="<?=$article_shop['id_produit']?>"/>
                         <input type="submit" name="ajouter" value="ajouter" class="btnAddAction" />
@@ -58,8 +57,8 @@
             <td style="text-align:right;" width="10%"><?php print $total_prix = $valeur['quantite']*$valeur['prix']?>€</td>
             <td>
                 <form method="post">
-                    <input type="hidden" name="ref_retirer" value="<?=$article_shop['id_produit']?>"/>
-                    <input type="submit" name="retirer" value="retirer" class="btnAddAction" />
+                    <input type="hidden" name="remove_ref" value="<?=$article_shop['id_produit']?>"/>
+                    <input type="submit" value="retirer" class="btnAddAction" />
                 </form>
             </td>
         </td>
@@ -71,7 +70,7 @@
     <form method="post">
         <div>
             <th >Total du panier</th>
-            <td style="text-align:right;" width="10%"><?php if(isset($total_panier)){echo $total_panier;$_SESSION['total'] = $total_panier;} ?>€</td>
+            <td style="text-align:right;" width="10%"><?php if(isset($total_panier)){echo $total_panier;$_SESSION['total'] = $total_panier;}?> €</td>
         </div>
         <td>
             <input type="submit" name="valider" value="valider" class="btnAddAction" />
