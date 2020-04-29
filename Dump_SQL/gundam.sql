@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  mer. 22 avr. 2020 à 17:34
+-- Généré le :  mer. 29 avr. 2020 à 18:11
 -- Version du serveur :  10.4.11-MariaDB
 -- Version de PHP :  7.4.1
 
@@ -74,7 +74,9 @@ INSERT INTO `commande` (`id_commande`, `id_c`, `total`, `date_commande`) VALUES
 (42, 103, 1218.65, '2020-04-21 14:09:31'),
 (43, 103, 11060.2, '2020-04-21 14:09:48'),
 (44, 103, 1083.69, '2020-04-21 14:10:03'),
-(45, 103, 8764.1, '2020-04-21 14:12:11');
+(45, 103, 8764.1, '2020-04-21 14:12:11'),
+(46, 102, 1550.79, '2020-04-22 17:55:38'),
+(47, 103, 1498.75, '2020-04-22 20:56:51');
 
 -- --------------------------------------------------------
 
@@ -121,7 +123,13 @@ INSERT INTO `commande_item` (`id_commande_item`, `id_client_item`, `prix`, `quan
 (50, 103, 87.55, 7, 8, 'Gundam100scale', '2020-04-21 14:12:11'),
 (51, 103, 78.55, 6, 9, 'Gundam066scale', '2020-04-21 14:12:11'),
 (52, 103, 75.55, 9, 6, 'GundamOmega', '2020-04-21 14:12:11'),
-(53, 103, 1000, 7, 28, 'marc', '2020-04-21 14:12:11');
+(53, 103, 1000, 7, 28, 'marc', '2020-04-21 14:12:11'),
+(54, 102, 29.55, 10, 1, 'Gundam9', '2020-04-22 17:55:38'),
+(55, 102, 78.55, 8, 9, 'Gundam066scale', '2020-04-22 17:55:39'),
+(56, 102, 56.99, 11, 7, 'GundamAzel', '2020-04-22 17:55:39'),
+(57, 103, 29.55, 9, 1, 'Gundam9', '2020-04-22 20:56:51'),
+(58, 103, 78.55, 8, 9, 'Gundam066scale', '2020-04-22 20:56:52'),
+(59, 103, 75.55, 8, 6, 'GundamOmega', '2020-04-22 20:56:52');
 
 -- --------------------------------------------------------
 
@@ -227,13 +235,13 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT pour la table `commande`
 --
 ALTER TABLE `commande`
-  MODIFY `id_commande` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id_commande` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
 
 --
 -- AUTO_INCREMENT pour la table `commande_item`
 --
 ALTER TABLE `commande_item`
-  MODIFY `id_commande_item` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
+  MODIFY `id_commande_item` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=60;
 
 --
 -- AUTO_INCREMENT pour la table `image`
