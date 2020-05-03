@@ -7,7 +7,7 @@
  
 Créer une base de données MySQL ayant pour nom "gundam" et procéder au restore du dump dans le répertoire DUMP_SQL.
 Tous est configurer dans le fichier config.php 
-+Nom de hote : mysql:host=localhost
-+Nom de la database est dbname=gundam
-+login est = "root"
-+Mot de passe est = ""
++ Nom de hote : mysql:host=localhost
++ Nom de la database est dbname=gundam
++ login est = "root"
++ Mot de passe est = ""
