@@ -11,8 +11,16 @@
                     <div class="card-header" name="produit" value="<?=$article_shop['produit_name']?>">
                         <?=$article_shop['produit_name']?>
                     </div>
-                    <div name="image" value="<?php echo ROOT_PATH.'images/'.$article_shop['produit_image']?>"> 
-                        <img src="<?php echo ROOT_PATH.'images/'.$article_shop['produit_image']?>" alt="myPic" width='200' />
+                    <?php
+                        foreach($img_shop as $k=>$shop){
+                            if($article_shop['produit_name']==$shop['nom']){
+                                $shop_image = $shop['image'];
+                            }
+                        }
+                    ?>
+                    <!-- Image -->
+                    <div> 
+                        <img src="<?php echo ROOT_PATH.'images/'. $shop_image?>" alt="myPic" width='200' />
                     </div>
                     <div class="card-body">
                         <h5 class="card-title" name="prix" value="<?=$article_shop['produit_price']?>" ><?=$article_shop['produit_price'].'€'?></h5>
@@ -20,7 +28,8 @@
                     </div>
                     <div class="cart-action">
                     <div >
-                        <input class="input_display" name="quantite" type="number" value="<?=$value['quantite'];?>" min="1" max="">
+                        <input class="input_display" name="quantite" type="number" value="<?=$value['quantite'];?>" min="1" max="
+">
                     </div>
                         <input type="hidden" name="ref_id" value="<?=$article_shop['id_produit']?>"/>
                         <input type="submit" name="ajouter" value="ajouter" class="btnAddAction" />
@@ -57,11 +66,10 @@
             <td style="text-align:right;" width="10%"><?php print $total_prix = $valeur['quantite']*$valeur['prix']?>€</td>
             <td>
                 <form method="post">
-                    <input type="hidden" name="remove_ref" value="<?=$article_shop['id_produit']?>"/>
+                    <input type="hidden" name="remove_ref" value="<?=$valeur['ref']?>"/>
                     <input type="submit" value="retirer" class="btnAddAction" />
                 </form>
             </td>
-        </td>
         </tr>   
     </tbody>
     <?php $total_panier += $total_prix?>  

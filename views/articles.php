@@ -8,8 +8,17 @@
           <div class="card-body">
               <h5 class="card-title"><?=$article['produit_price'].'€'?></h5>
               <p class="card-text"><?=$article['produit_description']?></p>
+               <?php
+                foreach($image_list as $k=>$list){
+                    if($article['produit_name']==$list['nom']){
+                        $path = ROOT_PATH;
+                        $image = $list['image'];
+                    }
+                }
+              ?>
+              <!-- image -->
               <div>
-                    <img src="<?php echo ROOT_PATH.'images/'.$article['produit_image']?>" alt="myPic" width='200' />
+                <img src="<?php echo $path.'images/'.$image?>" alt="myPic" width='200' />
               </div>
               <a href="<?=ROOT_PATH.'article/'.$article['produit_name']?>" class="btn btn-primary">Voir le détail</a>
           </div>

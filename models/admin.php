@@ -21,9 +21,9 @@ function add_product($nom,$prix,$description){
 }
 
 // ajouter image
-function add_image($fileNameLoad){
-    $results = get_db()->prepare("INSERT INTO image (image) VALUES (:image)");
-    $results ->execute(array(':image'=>$fileNameLoad));
+function add_image($fileNameLoad,$nomdb){
+    $results = get_db()->prepare("INSERT INTO image (nom,image) VALUES (:nom,:image)");
+    $results ->execute(array(':nom'=>$nomdb,':image'=>$fileNameLoad));
     $results ->closeCursor();
 }
 
@@ -56,6 +56,15 @@ function delete_product($ref){
     $search->execute();
 }
 
-// editer le produit
+// image
+
+function images_admin(){
+    $sql_image="SELECT * FROM image ";
+    $image_prepare = get_db()->prepare($sql_image);
+    $image_prepare->execute();
+    $result_image = $image_prepare->fetchAll();
+    $image_prepare->closeCursor();
+    return $result_image;
+}
 
 ?>

@@ -21,12 +21,21 @@ if(empty($_SESSION['user'])){
                 <h5 class="card-title" name="ref" value="<?=$article['id_produit']?>">reference n°:<?=$article['id_produit']?></h5>
                 <h5 class="card-title"><?=$article['produit_price'].'€'?></h5>
                 <p class="card-text"><?=$article['produit_description']?></p>
+                <?php
+                    foreach($admin_img as $k=>$ad_img){
+                        if($article['produit_name']==$ad_img['nom']){
+                            $img_admin = $ad_img['image'];
+                        }
+                    }
+                ?>
+                <!-- image -->
                 <div>
-                    <img src="<?php echo ROOT_PATH.'images/'.$article['produit_image']?>" alt="myPic" width='200' />
+                    <img src="<?php echo ROOT_PATH.'images/'.$img_admin?>" alt="myPic" width='200' />
                 </div>
             </div>
     <?php endforeach?>
 </div>
+
 <!-- Editer un produit -->
 <div class="jumbotron">
 <h1 class="display-4">Ajout</h1>
@@ -52,7 +61,11 @@ if(empty($_SESSION['user'])){
 <div class="jumbotron">
     <h1 class="display-4">Image</h1>
     <h2> Ajouter image.</h2>
+    <p> Mettre le nom identique au nom image  </p>
+    <p> Image que en extension .jpg  </p>
         <form method="post" enctype="multipart/form-data">
+            <label > Entrer le nom :</label>
+            <input type="text" name="nomdb" />
             <input type="file" name="image" />
             <input type="submit" name="upload_image" value="Upload" />
         </form>
@@ -65,7 +78,7 @@ if(empty($_SESSION['user'])){
     <form method="POST" >         
         <div class="form-group">
             <label for="exampleInputLogin">Reference du produit a supprimer</label>
-            <input type="text" class="form-control" placeholder="Entrer la reference" name="ref" >
+            <input type="text" class="form-control" placeholder="Entrer la reference " name="ref" >
         </div>
         <button type="submit" class="btn btn-primary" name="delete">Supprimer</button>
     </form>
@@ -79,7 +92,7 @@ if(empty($_SESSION['user'])){
         <form method="POST" >
             <div class="form-group">
                 <label for="exampleInputLogin">Ref du produit</label>
-                <input type="text" class="form-control"  placeholder="ref du produit" name="ref_nom" >
+                <input type="text" class="form-control"  placeholder="ref du produit à changer" name="ref_nom" >
                 <label for="exampleInputLogin">Nom du produit</label>
                 <input type="text" class="form-control"  placeholder="Changement Nom" name="produit_name" >
             </div>
@@ -91,7 +104,7 @@ if(empty($_SESSION['user'])){
         <form method="POST" >
             <div class="form-group">
                 <label for="exampleInputLogin">Ref du produit</label>
-                <input type="text" class="form-control"  placeholder="ref du produit" name="ref_prix" >
+                <input type="text" class="form-control"  placeholder="ref du produit à changer" name="ref_prix" >
                 <label for="exampleInputLogin">Prix</label>
                 <input type="text" class="form-control" aria-describedby="Login_user" placeholder="Entrer le prix a changer" name="produit_price" >
             </div>
@@ -103,7 +116,7 @@ if(empty($_SESSION['user'])){
         <form method="POST" >
             <div class="form-group">
                 <label for="exampleInputLogin">Ref du produit</label>
-                <input type="text" class="form-control"  placeholder="ref du produit" name="ref_description" >
+                <input type="text" class="form-control"  placeholder="ref du produit à changer" name="ref_description" >
                 <label for="exampleInputLogin">Description</label>
                 <input type="text" class="form-control" aria-describedby="Login_user" placeholder="Entrer la description a changer" name="produit_description" >
             </div>
@@ -111,7 +124,6 @@ if(empty($_SESSION['user'])){
         </form> 
     </div>    
 </div>
-    
 <?php
     $title = "administrateur";
     $content = ob_get_clean();

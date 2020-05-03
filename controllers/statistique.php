@@ -26,7 +26,9 @@
         $produit_commander=array();
         $produit_commander=stat_articles();
     }
- 
+    
+    $sql_client = client();
+
     require 'views/statistique.php';
 
 ?>

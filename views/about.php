@@ -4,7 +4,7 @@
 
 <<div class="jumbotron">
     <h1 class="display-4">About</h1>
-    <p class="lead">Comment la société est né </p>
+    <p class="lead">Bienvenue sur le Gundam shop ou on vent des maquettes Gundam pour les Connaisseurs</p>
 </div>
 
 <?php

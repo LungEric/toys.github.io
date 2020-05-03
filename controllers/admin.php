@@ -2,17 +2,18 @@
     require 'models/admin.php';
 
     $list_produit = all_items();
+    $admin_img = images_admin();
 
     if(isset($_POST['produit_name']) && !empty($_POST['produit_name']) && isset($_POST['produit_price']) && !empty($_POST['produit_price']) && isset($_POST['produit_description']) && !empty($_POST['produit_description'])){
         $nom =$_POST['produit_name'] ;
         $prix = $_POST['produit_price'];
         $description = $_POST['produit_description'];
-        
         add_product($nom,$prix,$description);
     }  
 
     if(isset($_POST['upload_image'])){
-        // immage
+        $nom = $_POST['nomdb'];
+        // image
         $file = $_FILES['image'];
         $fileName = $_FILES['image']['name'];
         // temp location 
@@ -28,7 +29,7 @@
             if($fileError === 0){
                 if($fileSize < 1000000){
                     $fileNameNew =  $fileName;
-                    add_image($fileNameNew);
+                    add_image($fileNameNew,$nom);
                     $fileDestination = 'images/'.$fileNameNew;
                     move_uploaded_file($fileTmpName,$fileDestination);
                 }

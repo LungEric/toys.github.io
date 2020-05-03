@@ -1,9 +1,6 @@
 <?php
-// La variable data est une liste contenant l'ensemble des données. 1 élément = 1 donnée.
-// A terme, les données seront récupérées depuis une db et injectées dans des objets php
 
 include 'models/config.php';
-// Connection DB.
 
 $sql_demande = "SELECT * FROM produit" ;
 $gundam_querry = get_db()->query($sql_demande);  
@@ -12,8 +9,6 @@ $list_data = $gundam_querry->fetchAll(PDO::FETCH_ASSOC);
 
 function all_items(){
     global $list_data;
-    // Pour voir les tableau associatives 
-    // echo '<br>'.print_r($list_data).'<br>';
     return $list_data;
 }
 
@@ -27,5 +22,13 @@ function item($article){
     }
 }
 
+function images(){
+    $sql_image="SELECT * FROM image ";
+    $image_prepare = get_db()->prepare($sql_image);
+    $image_prepare->execute();
+    $result_image = $image_prepare->fetchAll();
+    $image_prepare->closeCursor();
+    return $result_image;
+}
 
 ?>

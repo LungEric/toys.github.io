@@ -30,4 +30,13 @@
         return $result_item ;
     }
 
+    function client(){
+        $sql_all = "SELECT * FROM client WHERE NOT client_login='admin'";
+        $req_sall = get_db()->prepare($sql_all);
+        $req_sall ->execute();
+        $resultat_sall = $req_sall->fetchAll();
+        $req_sall ->closeCursor();
+        return $resultat_sall; 
+    }
+
 ?>

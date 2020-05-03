@@ -2,7 +2,7 @@
     include 'models/shopping_cart.php';
     
     $list=show();
-   
+    $img_shop = images_shopping();
   if(isset($_SESSION['panier'])){
         $total_panier=0;
         $total_quantité=0;
@@ -34,7 +34,7 @@
         }
         
         if(isset($_POST['valider'])){
-            // met total du panier dans une variable.
+            // ajoute le total du panier dans une variable.
             $total_db =$_SESSION['total'];
             $id=$_SESSION['id'];
             $panier=$_SESSION['panier'];   

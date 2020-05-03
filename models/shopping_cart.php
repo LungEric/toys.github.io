@@ -44,5 +44,17 @@
         unset($_SESSION['panier']);
     }
 
+    // montre la liste des images
+
+    function images_shopping(){
+        $sql_image="SELECT * FROM image ";
+        $image_prepare = get_db()->prepare($sql_image);
+        $image_prepare->execute();
+        $result_image = $image_prepare->fetchAll();
+        $image_prepare->closeCursor();
+        return $result_image;
+    }
+    
+
 ?>
 

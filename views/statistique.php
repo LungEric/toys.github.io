@@ -12,13 +12,10 @@
 
             function drawChart() {
             var data = google.visualization.arrayToDataTable([
-                ["Client", "Total"],
+                ["Vente", "Total"],
                 <?php
-                    foreach( $clients as $k=>$client){
-                        foreach($facture as $k=>$commande){
-                        // echo  "[".$commande['total'].", ".$commande['date_commande']."]";
-                        echo "['".$client['client_login']."',".$commande['total']."]," ;
-                        }
+                    foreach($facture as $k=>$commande){
+                        echo "['".$commande['id_c']."',".$commande['total']."]," ;
                     }
                 ?>
             ]);
@@ -46,7 +43,6 @@
             }
         </script> 
     </script>
-
 <body>
     <div class="jumbotron">
         <h1 class="display-4">Statistique</h1>
@@ -54,6 +50,19 @@
             <div class="card-body">
                 <h5 class="card-title">Commandes</h5>
                 <p class="card-text">Content</p>
+                <div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+                    <div class="card-body">
+                        <?php foreach($sql_client as $c=>$cl){?>
+                            <div class="card-header">Clients n°<?= $c?>:</div>
+                            <ul class="list-group list-group-flush">
+                                <li >ID client: <?= $cl['id_client'] ?></li>
+                                <li >email du client: <?= $cl['client_email']?></li>
+                            </ul>
+                        <?php
+                            };
+                        ?>
+                    </div>
+                </div>
                 <div id="colonne"></div>
             </div>
         </div>

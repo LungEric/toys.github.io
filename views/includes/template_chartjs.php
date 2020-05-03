@@ -76,20 +76,6 @@
         <?php
             echo $content 
         ?>
-        <!-- Code test pour le bootstrap -->
-            <!-- <div class="card w-50 p-3">
-            <div class="card-body">
-                <h5 class="card-title">Hello world</h5>
-                <p class="card-text">Content</p>
-            </div> -->
-            <!-- <?php   
-                    foreach( $clients as $k=>$client){
-                        foreach($facture as $k=>$commande){
-                            echo  "client:".$client['client_login']."total:".$commande['total'];
-                        }
-                    }
-            ?> -->
-
         </div>
         </main>
         <footer class="footer">

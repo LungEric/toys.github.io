@@ -2,8 +2,11 @@
 
 require 'models/articles.php';
 $article=REQ_TYPE_ID;
+$image_list = images();
+$image_prod = images();
 if(!REQ_TYPE_ID){
     $list = $list_data;
+    
     include 'views/articles.php';
 }else{
     // $list = per_item(REQ_TYPE_ID);
