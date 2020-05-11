@@ -1,9 +1,9 @@
 # Projet_web_Gundam
 
-#Exemple de site e-commerce:
+# Exemple de site e-commerce:
 C'est un exemple de site e-commerce avec un systeme CRUD donc on peut créer un utilisateur et faire des achats.
 
-#Configuration:
+# Configuration:
 
  2 compte client créer et 1 admin :
   + compte client => login = eric2 ; mot de passe = eric2
@@ -17,5 +17,5 @@ Tous est configurer dans le fichier config.php
 + login est = "root"
 + Mot de passe est = ""
 
-##Image
+## Image
 ![Capture d’écran (3)](https://user-images.githubusercontent.com/8082684/81623419-c59da380-93f3-11ea-8292-5b59de37955a.png)
