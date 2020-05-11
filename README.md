@@ -18,4 +18,4 @@ Tous est configurer dans le fichier config.php
 + Mot de passe est = ""
 
 ## Image
-![Capture d’écran (3)](https://user-images.githubusercontent.com/8082684/81623419-c59da380-93f3-11ea-8292-5b59de37955a.png)
+![Capture d’écran (4)](https://user-images.githubusercontent.com/8082684/81623561-22995980-93f4-11ea-8674-6e37eb459dd0.png)
